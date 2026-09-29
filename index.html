@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>A Love Told In Silence ❤️</title>
+  
+  <!-- Premium Google Fonts for cinematic romantic aesthetic -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Glassmorphism Navigation Bar -->
+  <header class="top-nav">
+    <div class="brand-tag">
+      <span class="pulse-dot"></span>
+      <span class="story-counter" id="storyCounter">01 / 12</span>
+    </div>
+    
+    <div class="nav-actions">
+      <!-- Video Audio Unmute Button -->
+      <button class="audio-toggle-btn" id="audioToggleBtn" aria-label="Toggle Sound" title="Sound On / Off">
+        <div class="sound-wave" id="soundWave">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <span class="audio-label" id="audioLabel">Sound</span>
+        <svg class="speaker-icon" id="speakerIcon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+          <line x1="23" y1="9" x2="17" y2="15"></line>
+          <line x1="17" y1="9" x2="23" y2="15"></line>
+        </svg>
+      </button>
+
+      <!-- Fullscreen Toggle -->
+      <button class="icon-btn" id="fsToggleBtn" aria-label="Toggle Fullscreen" title="Full Screen">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Story Progress Bar (Instagram / Reels Style) -->
+  <div class="story-progress-bar" id="storyProgressBar">
+    <!-- 12 segments dynamically injected -->
+  </div>
+
+  <!-- Main Vertical Fullscreen Feed (Continuous 1:1 Natural Scrolling) -->
+  <main class="feed-container" id="feedContainer">
+
+    <!-- SLIDE 1: The Wish -->
+    <section class="slide-section is-active" id="slide-1" data-index="1">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="auto">
+          <source src="video_01.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-left"></div>
+      </div>
+      <div class="content-box pos-top-left">
+        <span class="kicker">TUM BAS TAARE GINNA</span>
+        <h1 class="slide-title">The<br>Wish</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">tujhko paane ki tamanna mein guzri hoti..</p>
+          <p class="shayari-line highlight">ek jaan aur bhi hoti to tumhari hoti..!</p>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span class="scroll-text">scroll down</span>
+        <div class="chevron"></div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: Day & Night -->
+    <section class="slide-section" id="slide-2" data-index="2">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_05.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-right"></div>
+      </div>
+      <div class="content-box pos-top-right">
+        <span class="kicker">TERE KHAYALON MEIN</span>
+        <h1 class="slide-title">Day &<br>Night</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Tera naam lekar hi subah hoti hai,</p>
+          <p class="shayari-line highlight">tere khayalon mein hi raat soti hai…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: The Journey -->
+    <section class="slide-section" id="slide-3" data-index="3">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_08.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-left"></div>
+      </div>
+      <div class="content-box pos-top-left">
+        <span class="kicker">TERE SAATH HAR MOD</span>
+        <h1 class="slide-title">The<br>Journey</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Tere saath har mod aasan ho gaya,</p>
+          <p class="shayari-line highlight">tere pyaar mein har din khaas ho gaya.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: Har Pal Khaas -->
+    <section class="slide-section" id="slide-4" data-index="4">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_09.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-right"></div>
+      </div>
+      <div class="content-box pos-top-right">
+        <span class="kicker">TERE BINA BE-JAAN</span>
+        <h1 class="slide-title">Har Pal<br>Khaas</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Tera saath har pal khaas hai,</p>
+          <p class="shayari-line highlight">Tere bina har pal be-jaan hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: Silence & Stars -->
+    <section class="slide-section" id="slide-5" data-index="5">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_06.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-left"></div>
+      </div>
+      <div class="content-box pos-top-left">
+        <span class="kicker">TERA SAATH HAR DIN</span>
+        <h1 class="slide-title">Silence &<br>Stars</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Tera saath har din naya hota hai,</p>
+          <p class="shayari-line highlight">Tere bina har din adhoora hota hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: The Breeze -->
+    <section class="slide-section" id="slide-6" data-index="6">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_04.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-right"></div>
+      </div>
+      <div class="content-box pos-top-right">
+        <span class="kicker">HAWA KI TARAH</span>
+        <h1 class="slide-title">The<br>Breeze</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Tu door hai par paas hi lagti hai,</p>
+          <p class="shayari-line highlight">Jaise hawa ho jo chhoo ke nikalti hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: The Moonlight -->
+    <section class="slide-section" id="slide-7" data-index="7">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_03.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-left"></div>
+      </div>
+      <div class="content-box pos-top-left">
+        <span class="kicker">MERI JAAN TU HI HAI</span>
+        <h1 class="slide-title">The<br>Moonlight</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Tu sab kuch mang le, tujhpe sab kuch kurbaan hai,</p>
+          <p class="shayari-line highlight">bas jaan mat mangna, kyunki tu hi to meri jaan hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 8: The Spell -->
+    <section class="slide-section" id="slide-8" data-index="8">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_07.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-center-left"></div>
+      </div>
+      <div class="content-box pos-center-left">
+        <span class="kicker">TERI AANKHON KA JADU</span>
+        <h1 class="slide-title">The<br>Spell</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Chandi sona ek taraf, tera hona ek taraf,</p>
+          <p class="shayari-line highlight">ek taraf teri aankhein, jaadu tona ek taraf.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 9: Dil Ki Arzi -->
+    <section class="slide-section" id="slide-9" data-index="9">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_02.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-center"></div>
+      </div>
+      <div class="content-box pos-top-center">
+        <span class="kicker">BIN KUCH KAHE</span>
+        <h1 class="slide-title">Dil Ki<br>Arzi</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Bina meri zubaan tak aaye, tere dil tak pahunch jaaye,</p>
+          <p class="shayari-line highlight">ye mere dil ki arzi hai, baaki meri jaan teri marzi hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 10: The Miracle -->
+    <section class="slide-section" id="slide-10" data-index="10">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_10.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-left"></div>
+      </div>
+      <div class="content-box pos-top-left">
+        <span class="kicker">AGAR TU MERI HO JAYE</span>
+        <h1 class="slide-title">The<br>Miracle</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Zamaana bhi raazi ho, aur tu bhi... koi aisi hera-pheri ho jaaye,</p>
+          <p class="shayari-line highlight">main kamaal kar dunga tujhe chaahne mein, agar tu poori tarah meri ho jaaye.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 11: Forever & Always (Extra Video Page 11) -->
+    <section class="slide-section" id="slide-11" data-index="11">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_11.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-center"></div>
+      </div>
+      <div class="content-box pos-top-center">
+        <span class="kicker">HAMARI DAASTAN</span>
+        <h1 class="slide-title">Forever &<br>Always</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Kuch daastan lafzon ki mohtaaj nahi hoti..</p>
+          <p class="shayari-line highlight">Bas do dilon ki dhadkan hi kaafi hoti hai ❤️</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 12: To Be Continued (Extra Video Page 12) -->
+    <section class="slide-section" id="slide-12" data-index="12">
+      <div class="video-wrapper">
+        <video class="slide-video" playsinline webkit-playsinline muted loop preload="metadata">
+          <source src="video_12.mp4" type="video/mp4">
+        </video>
+        <div class="slide-overlay overlay-top-left"></div>
+      </div>
+      <div class="content-box pos-top-left">
+        <span class="kicker">YE SAFAR YAHI NAHI RUKTA</span>
+        <h1 class="slide-title">To Be<br>Continued...</h1>
+        <div class="shayari-box">
+          <p class="shayari-line">Har lamha tumhara intezaar rahega..</p>
+          <p class="shayari-line highlight">A journey that lives in every heartbeat 💫</p>
+        </div>
+        <button class="replay-btn" id="replayBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="1 4 1 10 7 10"></polyline>
+            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+          </svg>
+          Relive From Beginning
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Floating Nav Controls (Up / Down Arrows for smooth navigation) -->
+  <aside class="floating-nav-buttons" aria-label="Slide Navigation">
+    <button class="nav-arrow prev" id="prevSlideBtn" aria-label="Previous Slide">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+    <button class="nav-arrow next" id="nextSlideBtn" aria-label="Next Slide">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- Ambient Floating Heart & Star Canvas -->
+  <canvas id="heartCanvas" class="heart-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
